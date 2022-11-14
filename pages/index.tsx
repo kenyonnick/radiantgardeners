@@ -24,7 +24,6 @@ export default function Home() {
           <div><a href="https://www.instagram.com/radiantgardeners">Instagram</a></div>
           <div><a href="https://www.tiktok.com/@radiantgardeners">TikTok</a></div>
         </div>
-        {/* <div className={styles.curve} /> */}
       </header>
       
     </div>
