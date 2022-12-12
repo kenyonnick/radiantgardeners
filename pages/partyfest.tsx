@@ -24,7 +24,6 @@ export default function PartyFest () {
             <nav className={styles.links}>
               <a href="#games">Games</a>
               <a href="#teams">Teams</a>
-              <a href="">Discord</a>
             </nav>
           </header>
           <Section id="games" style={{ backgroundColor: "#fbf", color: "black"}}>
@@ -48,10 +47,10 @@ export default function PartyFest () {
           <footer className={styles.footer}>
             <p>An event lovingly hosted by the Radiant Gardeners</p>
             <div className={styles.footerSocials}>
-              <a href="#twitter">YouTube</a>
-              <a href="#twitter">Twitch</a>
-              <a href="#twitter">Twitter</a>
-              <a href="#twitter">Discord</a>
+              <a target="_blank" rel="noreferrer" href="https://www.youtube.com/radiantgardeners">YouTube</a>
+              <a target="_blank" rel="noreferrer" href="https://www.twitch.tv/radiantgardeners">Twitch</a>
+              <a target="_blank" rel="noreferrer" href="https://www.twitter.com/radiantgardenrs">Twitter</a>
+              <a target="_blank" rel="noreferrer" href="https://discord.gg/qw76xS25A6">Discord</a>
             </div>
           </footer>
       </div>
