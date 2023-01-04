@@ -23,8 +23,8 @@ export default function PartyFest () {
                 A 5 day online event celebrating party games and community.
             </h2>
             <nav className={styles.links}>
-              <a href="#games">Games</a>
               <a href="#teams">Teams</a>
+              <a href="#games">Games</a>
             </nav>
           </header>
           <Section id="teams" style={{ backgroundColor: "#bff", color: "black"}}>
