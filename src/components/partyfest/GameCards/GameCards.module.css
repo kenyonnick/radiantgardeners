@@ -1,8 +1,12 @@
 .cards {
     display: flex;
     flex-direction: row;
-    gap: 2rem;
-    padding: 1rem 0;
+    gap: 4rem;
+    padding: 2rem 0;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 @media (max-width: 600px) {

@@ -37,6 +37,7 @@ export default function PartyFest () {
           </Section>
           <Section id="games" style={{ backgroundColor: "#fbf", color: "black"}}>
             <h1 className={styles.sectionTitle}>Games</h1>
+            <p>Using an advanced and complex algorithm {"we're"} calling {'"Personal Experience"'}, we have selected some of the best party games available.</p>
             <GameCards />
           </Section>
           <footer className={styles.footer}>
