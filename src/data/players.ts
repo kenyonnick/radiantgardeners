@@ -20,7 +20,7 @@ const ORANGE: Team = {
 
 const YELLOW: Team = {
     name: 'Yellow',
-    color: '#bff',
+    color: '#ff4',
 };
 
 export type Player = {
@@ -71,8 +71,8 @@ export const ROYALAQUA: Player = {
     team: GREEN,
 };
 
-export const XLYRIA: Player = {
-    name: 'Xlyria',
+export const XILYRIA: Player = {
+    name: 'Xilyria',
     team: PURPLE,
 };
 
@@ -130,7 +130,7 @@ export const ALL_PLAYERS: Player[] = [
     UNKNOWN_ORANGE,
     LANZOFMASTERS,
     ROYALAQUA,
-    XLYRIA,
+    XILYRIA,
     MOCHOCOLATE,
     NOTORCRANK,
     ARIEFJOHAN,

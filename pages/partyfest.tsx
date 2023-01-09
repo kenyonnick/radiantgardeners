@@ -2,7 +2,7 @@ import Head from 'next/head'
 import { Section } from '../src/components/partyfest';
 import { GameCards } from '../src/components/partyfest/GameCards/GameCards';
 import { ScheduleDay } from '../src/components/partyfest/ScheduleDay/ScheduleDay';
-import { ALL_PLAYERS, ARIEFJOHAN, EVERYONE, EXTREMESALSAING, FALL_GUYS, FOXTROTPERRY, GANG_BEASTS, GOLF_WITH_YOUR_FRIENDS, JOHNNY_BOOMBOTZ, KTWAYFINDER, LANZOFMASTERS, LILINDO, LUULUSOUL, MARIO_PARTY_SUPERSTARS, MOCHOCOLATE, NOTORCRANK, NOVANEONGIRL, ROYALAQUA, THENINJAROIDS, ULTIMATE_CHICKEN_HORSE, UNKNOWN_ORANGE, UNKNOWN_YELLOW, XLYRIA } from '../src/data';
+import { ALL_PLAYERS, ARIEFJOHAN, EVERYONE, EXTREMESALSAING, FALL_GUYS, FOXTROTPERRY, GANG_BEASTS, GOLF_WITH_YOUR_FRIENDS, JOHNNY_BOOMBOTZ, KTWAYFINDER, LANZOFMASTERS, LILINDO, LUULUSOUL, MARIO_PARTY_SUPERSTARS, MOCHOCOLATE, NOTORCRANK, NOVANEONGIRL, ROYALAQUA, THENINJAROIDS, ULTIMATE_CHICKEN_HORSE, UNKNOWN_ORANGE, UNKNOWN_YELLOW, XILYRIA } from '../src/data';
 import styles from '../styles/PartyFest.module.css'
 
 export default function PartyFest () {
@@ -35,15 +35,13 @@ export default function PartyFest () {
             <p>{"We're"} bringing together some of our favorite content creators to form teams highly capable of partying together.</p>
             <br />
             <p>There will be 4 teams, each with 4 members.<br/> Each member will represent their team in one of the games.</p>
-            <br />
-            <p>Teams will be announced soon!</p>
           </Section>
           <Section id="games" style={{ backgroundColor: "#fbf", color: "black"}}>
             <h1 className={styles.sectionTitle}>Games</h1>
             <p>Using an advanced and complex algorithm {"we're"} calling {'"Personal Experience"'}, we have selected some of the best party games available.</p>
             <GameCards />
           </Section>
-          <Section id="schedule" style={{ backgroundColor: "#ffb", color: "black"}}>
+          <Section id="schedule" style={{ backgroundColor: "#bff", color: "black"}}>
             <h1 className={styles.sectionTitle}>Schedule</h1>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '2rem', paddingTop: '1rem'}}>
               <ScheduleDay 
@@ -62,7 +60,7 @@ export default function PartyFest () {
                 date={new Date(2023, 0, 25, 19)} 
                 game={MARIO_PARTY_SUPERSTARS} 
                 durationHrs={2} 
-                players={[LANZOFMASTERS, ROYALAQUA, XLYRIA, MOCHOCOLATE]}
+                players={[LANZOFMASTERS, ROYALAQUA, XILYRIA, MOCHOCOLATE]}
               />
               <ScheduleDay 
                 date={new Date(2023, 0, 26, 10)} 
