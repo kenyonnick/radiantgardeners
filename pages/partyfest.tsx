@@ -1,6 +1,8 @@
 import Head from 'next/head'
 import { Section } from '../src/components/partyfest';
 import { GameCards } from '../src/components/partyfest/GameCards/GameCards';
+import { ScheduleDay } from '../src/components/partyfest/ScheduleDay/ScheduleDay';
+import { ALL_PLAYERS, ARIEFJOHAN, EVERYONE, EXTREMESALSAING, FALL_GUYS, FOXTROTPERRY, GANG_BEASTS, GOLF_WITH_YOUR_FRIENDS, JOHNNY_BOOMBOTZ, KTWAYFINDER, LANZOFMASTERS, LILINDO, LUULUSOUL, MARIO_PARTY_SUPERSTARS, MOCHOCOLATE, NOTORCRANK, NOVANEONGIRL, ROYALAQUA, THENINJAROIDS, ULTIMATE_CHICKEN_HORSE, UNKNOWN_ORANGE, UNKNOWN_YELLOW, XLYRIA } from '../src/data';
 import styles from '../styles/PartyFest.module.css'
 
 export default function PartyFest () {
@@ -25,6 +27,7 @@ export default function PartyFest () {
             <nav className={styles.links}>
               <a href="#teams">Teams</a>
               <a href="#games">Games</a>
+              <a href="#schedule">Schedule</a>
             </nav>
           </header>
           <Section id="teams" style={{ backgroundColor: "#bff", color: "black"}}>
@@ -39,6 +42,41 @@ export default function PartyFest () {
             <h1 className={styles.sectionTitle}>Games</h1>
             <p>Using an advanced and complex algorithm {"we're"} calling {'"Personal Experience"'}, we have selected some of the best party games available.</p>
             <GameCards />
+          </Section>
+          <Section id="schedule" style={{ backgroundColor: "#ffb", color: "black"}}>
+            <h1 className={styles.sectionTitle}>Schedule</h1>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '2rem', paddingTop: '1rem'}}>
+              <ScheduleDay 
+                date={new Date(2023, 0, 23, 19)} 
+                game={ULTIMATE_CHICKEN_HORSE} 
+                durationHrs={2} 
+                players={[EXTREMESALSAING, FOXTROTPERRY, NOVANEONGIRL, UNKNOWN_YELLOW]}
+              />
+              <ScheduleDay 
+                date={new Date(2023, 0, 24, 19)} 
+                game={GANG_BEASTS} 
+                durationHrs={2} 
+                players={[KTWAYFINDER, LILINDO, LUULUSOUL, UNKNOWN_ORANGE]}
+              />
+              <ScheduleDay 
+                date={new Date(2023, 0, 25, 19)} 
+                game={MARIO_PARTY_SUPERSTARS} 
+                durationHrs={2} 
+                players={[LANZOFMASTERS, ROYALAQUA, XLYRIA, MOCHOCOLATE]}
+              />
+              <ScheduleDay 
+                date={new Date(2023, 0, 26, 10)} 
+                game={GOLF_WITH_YOUR_FRIENDS} 
+                durationHrs={2} 
+                players={[NOTORCRANK, ARIEFJOHAN, THENINJAROIDS, JOHNNY_BOOMBOTZ]}
+              />
+              <ScheduleDay 
+                date={new Date(2023, 0, 27, 21)} 
+                game={FALL_GUYS}
+                durationHrs={1} 
+                players={[EVERYONE]}
+              />
+            </div>
           </Section>
           <footer className={styles.footer}>
             <p>An event lovingly hosted by the Radiant Gardeners</p>

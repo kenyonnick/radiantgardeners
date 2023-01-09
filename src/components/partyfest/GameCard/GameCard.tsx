@@ -1,13 +1,9 @@
 /* eslint-disable @next/next/no-img-element */
+import { Game } from '../../../data';
 import styles from './GameCard.module.css';
 
-type GameCardProps = {
-    name: string;
-    imgUrl: string;
-    players: number;
-}
 
-export const GameCard = ({ name, imgUrl, players }: GameCardProps) => {
+export const GameCard = ({ name, imgUrl, players }: Game) => {
     return (
         <div className={styles.card}>
             <div 

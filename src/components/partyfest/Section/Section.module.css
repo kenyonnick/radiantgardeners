@@ -6,6 +6,9 @@
 
 @media (max-width: 600px) {
     .section {
-        padding: 2rem;
+        padding: 1.5rem;
+    }
+    .section > h1 {
+        font-size: 4.5em;
     }
 }
