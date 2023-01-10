@@ -106,8 +106,8 @@ export const JEICE: Player = {
     team: YELLOW,
 };
 
-export const ZYTHERIOUS: Player = {
-    name: 'Zytherious (PixelScrubs)',
+export const RITALI: Player = {
+    name: 'Ritali (PixelScrubs)',
     team: ORANGE,
 };
 
@@ -127,7 +127,7 @@ export const ALL_PLAYERS: Player[] = [
     KTWAYFINDER,
     LILINDO,
     LUULUSOUL,
-    ZYTHERIOUS,
+    RITALI,
     LANZOFMASTERS,
     ROYALAQUA,
     XILYRIA,
