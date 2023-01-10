@@ -72,7 +72,7 @@ export const ROYALAQUA: Player = {
 };
 
 export const XILYRIA: Player = {
-    name: 'Xilyria',
+    name: 'xIlyria',
     team: PURPLE,
 };
 
