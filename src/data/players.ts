@@ -82,7 +82,7 @@ export const MOCHOCOLATE: Player = {
 };
 
 export const NOTORCRANK: Player = {
-    name: 'the_notorious_crank',
+    name: 'NotoriousCRANK',
     team: ORANGE
 };
 
@@ -91,8 +91,8 @@ export const ARIEFJOHAN: Player = {
     team: YELLOW,
 };
 
-export const THENINJAROIDS: Player = {
-    name: 'TheNinjaroids',
+export const THENINJAROID: Player = {
+    name: 'TheNinjaroid',
     team: GREEN,
 };
 
@@ -134,6 +134,6 @@ export const ALL_PLAYERS: Player[] = [
     MOCHOCOLATE,
     NOTORCRANK,
     ARIEFJOHAN,
-    THENINJAROIDS,
+    THENINJAROID,
     JOHNNY_BOOMBOTZ
 ];
