@@ -32,7 +32,7 @@ export type Player = {
 }
 
 export const EXTREMESALSAING: Player = {
-    name: 'Extremesalsaing',
+    name: 'Jay (Moonshot)',
     team: PURPLE,
 };
 
@@ -101,13 +101,13 @@ export const JOHNNY_BOOMBOTZ: Player = {
     team: PURPLE,
 };
 
-export const UNKNOWN_YELLOW: Player = {
-    name: '???',
+export const JEICE: Player = {
+    name: 'Jeice (PixelScrubs)',
     team: YELLOW,
 };
 
-export const UNKNOWN_ORANGE: Player = {
-    name: '???',
+export const ZYTHERIOUS: Player = {
+    name: 'Zytherious (PixelScrubs)',
     team: ORANGE,
 };
 
@@ -123,11 +123,11 @@ export const ALL_PLAYERS: Player[] = [
     EXTREMESALSAING,
     FOXTROTPERRY,
     NOVANEONGIRL,
-    UNKNOWN_YELLOW,
+    JEICE,
     KTWAYFINDER,
     LILINDO,
     LUULUSOUL,
-    UNKNOWN_ORANGE,
+    ZYTHERIOUS,
     LANZOFMASTERS,
     ROYALAQUA,
     XILYRIA,

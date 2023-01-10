@@ -2,7 +2,7 @@ import Head from 'next/head'
 import { Section } from '../src/components/partyfest';
 import { GameCards } from '../src/components/partyfest/GameCards/GameCards';
 import { ScheduleDay } from '../src/components/partyfest/ScheduleDay/ScheduleDay';
-import { ALL_PLAYERS, ARIEFJOHAN, EVERYONE, EXTREMESALSAING, FALL_GUYS, FOXTROTPERRY, GANG_BEASTS, GOLF_WITH_YOUR_FRIENDS, JOHNNY_BOOMBOTZ, KTWAYFINDER, LANZOFMASTERS, LILINDO, LUULUSOUL, MARIO_PARTY_SUPERSTARS, MOCHOCOLATE, NOTORCRANK, NOVANEONGIRL, ROYALAQUA, THENINJAROIDS, ULTIMATE_CHICKEN_HORSE, UNKNOWN_ORANGE, UNKNOWN_YELLOW, XILYRIA } from '../src/data';
+import { ALL_PLAYERS, ARIEFJOHAN, EVERYONE, EXTREMESALSAING, FALL_GUYS, FOXTROTPERRY, GANG_BEASTS, GOLF_WITH_YOUR_FRIENDS, JOHNNY_BOOMBOTZ, KTWAYFINDER, LANZOFMASTERS, LILINDO, LUULUSOUL, MARIO_PARTY_SUPERSTARS, MOCHOCOLATE, NOTORCRANK, NOVANEONGIRL, ROYALAQUA, THENINJAROIDS, ULTIMATE_CHICKEN_HORSE, ZYTHERIOUS, JEICE, XILYRIA } from '../src/data';
 import styles from '../styles/PartyFest.module.css'
 
 export default function PartyFest () {
@@ -48,13 +48,13 @@ export default function PartyFest () {
                 date={new Date(2023, 0, 23, 19)} 
                 game={ULTIMATE_CHICKEN_HORSE} 
                 durationHrs={2} 
-                players={[EXTREMESALSAING, FOXTROTPERRY, NOVANEONGIRL, UNKNOWN_YELLOW]}
+                players={[EXTREMESALSAING, FOXTROTPERRY, NOVANEONGIRL, JEICE]}
               />
               <ScheduleDay 
                 date={new Date(2023, 0, 24, 19)} 
                 game={GANG_BEASTS} 
                 durationHrs={2} 
-                players={[KTWAYFINDER, LILINDO, LUULUSOUL, UNKNOWN_ORANGE]}
+                players={[KTWAYFINDER, LILINDO, LUULUSOUL, ZYTHERIOUS]}
               />
               <ScheduleDay 
                 date={new Date(2023, 0, 25, 19)} 
