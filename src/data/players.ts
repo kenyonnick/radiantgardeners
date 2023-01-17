@@ -43,7 +43,7 @@ export const FOXTROTPERRY: Player = {
 
 export const NOVANEONGIRL: Player = {
     name: 'NovaNeonGirl',
-    team: ORANGE,
+    team: PURPLE,
 };
 
 export const KTWAYFINDER: Player = {
@@ -98,7 +98,7 @@ export const THENINJAROID: Player = {
 
 export const JOHNNY_BOOMBOTZ: Player = {
     name: 'Johnny_Boombotz',
-    team: PURPLE,
+    team: ORANGE,
 };
 
 export const JEICE: Player = {
@@ -136,4 +136,27 @@ export const ALL_PLAYERS: Player[] = [
     ARIEFJOHAN,
     THENINJAROID,
     JOHNNY_BOOMBOTZ
+];
+
+export const ULTIMATE_CHICKEN_HORSE_PLAYERS = [
+    EXTREMESALSAING,
+    FOXTROTPERRY,
+    JOHNNY_BOOMBOTZ,
+    JEICE
+];
+
+export const GANG_BEASTS_PLAYERS = [
+    KTWAYFINDER,
+    LILINDO,
+    LUULUSOUL,
+    RITALI
+];
+
+export const MARIO_PARTY_PLAYERS = [LANZOFMASTERS, ROYALAQUA, XILYRIA, MOCHOCOLATE];
+
+export const GOLF_WITH_YOUR_FRIENDS_PLAYERS = [
+    NOTORCRANK, 
+    ARIEFJOHAN, 
+    THENINJAROID, 
+    NOVANEONGIRL
 ];

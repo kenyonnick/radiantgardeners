@@ -2,7 +2,18 @@ import Head from 'next/head'
 import { Section } from '../src/components/partyfest';
 import { GameCards } from '../src/components/partyfest/GameCards/GameCards';
 import { ScheduleDay } from '../src/components/partyfest/ScheduleDay/ScheduleDay';
-import { ALL_PLAYERS, ARIEFJOHAN, EVERYONE, EXTREMESALSAING, FALL_GUYS, FOXTROTPERRY, GANG_BEASTS, GOLF_WITH_YOUR_FRIENDS, JOHNNY_BOOMBOTZ, KTWAYFINDER, LANZOFMASTERS, LILINDO, LUULUSOUL, MARIO_PARTY_SUPERSTARS, MOCHOCOLATE, NOTORCRANK, NOVANEONGIRL, ROYALAQUA, THENINJAROID, ULTIMATE_CHICKEN_HORSE, RITALI, JEICE, XILYRIA } from '../src/data';
+import { 
+  EVERYONE, 
+  FALL_GUYS, 
+  GANG_BEASTS, 
+  GOLF_WITH_YOUR_FRIENDS, 
+  MARIO_PARTY_SUPERSTARS, 
+  ULTIMATE_CHICKEN_HORSE, 
+  ULTIMATE_CHICKEN_HORSE_PLAYERS, 
+  GANG_BEASTS_PLAYERS, 
+  MARIO_PARTY_PLAYERS, 
+  GOLF_WITH_YOUR_FRIENDS_PLAYERS 
+} from '../src/data';
 import styles from '../styles/PartyFest.module.css'
 
 export default function PartyFest () {
@@ -48,25 +59,25 @@ export default function PartyFest () {
                 date={new Date(2023, 0, 23, 19)} 
                 game={ULTIMATE_CHICKEN_HORSE} 
                 durationHrs={2} 
-                players={[EXTREMESALSAING, FOXTROTPERRY, NOVANEONGIRL, JEICE]}
+                players={ULTIMATE_CHICKEN_HORSE_PLAYERS}
               />
               <ScheduleDay 
                 date={new Date(2023, 0, 24, 19)} 
                 game={GANG_BEASTS} 
                 durationHrs={2} 
-                players={[KTWAYFINDER, LILINDO, LUULUSOUL, RITALI]}
+                players={GANG_BEASTS_PLAYERS}
               />
               <ScheduleDay 
                 date={new Date(2023, 0, 25, 19)} 
                 game={MARIO_PARTY_SUPERSTARS} 
                 durationHrs={2} 
-                players={[LANZOFMASTERS, ROYALAQUA, XILYRIA, MOCHOCOLATE]}
+                players={MARIO_PARTY_PLAYERS}
               />
               <ScheduleDay 
                 date={new Date(2023, 0, 26, 10)} 
                 game={GOLF_WITH_YOUR_FRIENDS} 
                 durationHrs={2} 
-                players={[NOTORCRANK, ARIEFJOHAN, THENINJAROID, JOHNNY_BOOMBOTZ]}
+                players={GOLF_WITH_YOUR_FRIENDS_PLAYERS}
               />
               <ScheduleDay 
                 date={new Date(2023, 0, 27, 21)} 

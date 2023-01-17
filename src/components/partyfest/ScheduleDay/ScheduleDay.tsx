@@ -31,7 +31,7 @@ export const ScheduleDay = ({ date, game, durationHrs, players }: ScheduleDayPro
             </div>
             <div className={styles.players}>
                 {players.sort((a, b) => a.team.name.localeCompare(b.team.name)).map((player) => (
-                    <div key={player.name} className={styles.player} style={{ borderLeft: `1em solid black`}}>
+                    <div key={player.name} className={styles.player} style={{ borderLeft: `1em solid ${player.team.color}`}}>
                         <p>{player.name}</p>
                         {/* <a>Watch</a> */}
                     </div>
