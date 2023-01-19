@@ -2,6 +2,7 @@ import Head from 'next/head'
 import { Section } from '../src/components/partyfest';
 import { GameCards } from '../src/components/partyfest/GameCards/GameCards';
 import { ScheduleDay } from '../src/components/partyfest/ScheduleDay/ScheduleDay';
+import { Team } from '../src/components/partyfest/Team';
 import { 
   EVERYONE, 
   FALL_GUYS, 
@@ -12,7 +13,11 @@ import {
   ULTIMATE_CHICKEN_HORSE_PLAYERS, 
   GANG_BEASTS_PLAYERS, 
   MARIO_PARTY_PLAYERS, 
-  GOLF_WITH_YOUR_FRIENDS_PLAYERS 
+  GOLF_WITH_YOUR_FRIENDS_PLAYERS, 
+  GREEN_TEAM,
+  ORANGE_TEAM,
+  PURPLE_TEAM,
+  YELLOW_TEAM,
 } from '../src/data';
 import styles from '../styles/PartyFest.module.css'
 
@@ -45,7 +50,19 @@ export default function PartyFest () {
             <h1 className={styles.sectionTitle}>Teams</h1>
             <p>{"We're"} bringing together some of our favorite content creators to form teams highly capable of partying together.</p>
             <br />
-            <p>There will be 4 teams, each with 4 members.<br/> Each member will represent their team in one of the games.</p>
+            <p>
+              There will be 4 teams, each with 4 members.
+              <br/> 
+              Each member will represent their team in one of the games.
+              <br />
+              All four team members will work together in Fall Guys to finish the competition!
+            </p>
+            <div>
+              <Team team={GREEN_TEAM} name="Green Team" />
+              <Team team={ORANGE_TEAM} name="Orange Team" />
+              <Team team={PURPLE_TEAM} name="Purple Team" />
+              <Team team={YELLOW_TEAM} name="Yellow Team" />
+            </div>
           </Section>
           <Section id="games" style={{ backgroundColor: "#fbf", color: "black"}}>
             <h1 className={styles.sectionTitle}>Games</h1>
