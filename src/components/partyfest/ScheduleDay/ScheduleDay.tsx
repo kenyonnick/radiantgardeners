@@ -2,6 +2,7 @@ import styles from './ScheduleDay.module.css';
 import { addHours } from "date-fns";
 import format from "date-fns/format";
 import { Game, Player } from '../../../data';
+import { IoLogoTwitch } from 'react-icons/io5';
 
 export type ScheduleDayProps = {
     date: Date;
@@ -33,7 +34,16 @@ export const ScheduleDay = ({ date, game, durationHrs, players }: ScheduleDayPro
                 {players.sort((a, b) => a.team.name.localeCompare(b.team.name)).map((player) => (
                     <div key={player.name} className={styles.player} style={{ borderLeft: `1em solid ${player.team.color}`}}>
                         <p>{player.name}</p>
-                        {/* <a>Watch</a> */}
+                        {player.twitch && (
+                            <a 
+                                className={styles.twitchLink} 
+                                href={`https://www.twitch.tv/${player.twitch}`} 
+                                target="_blank" 
+                                rel='noreferrer'
+                            >
+                                <IoLogoTwitch className={styles.twitchLogo}/>
+                            </a>
+                        )}
                     </div>
                 ))}
             </div>

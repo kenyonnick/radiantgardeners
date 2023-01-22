@@ -43,6 +43,7 @@
     display: flex;
     flex-direction: column;
     gap: 2rem;
+    align-items: center;
 }
 
 .player {
@@ -53,6 +54,22 @@
     padding: 1rem;
     justify-content: space-between;
     min-width: 20rem;
+}
+
+.twitchLink {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.twitchLogo {
+    width: 1.5em;
+    height: 1.5em;
+    color-scheme: inherit;
+}
+
+.twitchLogo:hover {
+    fill: rgb(169, 112, 255);
 }
 
 @media (max-width: 600px) {
