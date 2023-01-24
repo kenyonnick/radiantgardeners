@@ -5,7 +5,7 @@ export type Team = {
 
 const PURPLE: Team = {
     name: 'Purple',
-    color: '#fbf',
+    color: '#ca8bff',
 };
 
 const GREEN: Team = {
