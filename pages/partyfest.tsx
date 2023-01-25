@@ -44,6 +44,7 @@ export default function PartyFest () {
               <a href="#teams">Teams</a>
               <a href="#games">Games</a>
               <a href="#schedule">Schedule</a>
+              <a href="#prizes">Prizes</a>
             </nav>
           </header>
           <Section id="teams" style={{ backgroundColor: "#bff", color: "black"}}>
@@ -103,6 +104,22 @@ export default function PartyFest () {
                 players={[EVERYONE]}
               />
             </div>
+          </Section>
+          <Section id="prizes" style={{ backgroundColor: "#fbf", color: "black"}}>
+            <h1 className={styles.sectionTitle}>Prizes</h1>
+            <p>Each member of the winning team will win:</p>
+            <ul style={{ marginLeft: '2rem'}}>
+              <li>
+                Custom Emote by LuuluSoul
+              </li>
+              <li>
+                Party Crown Emote by LuuluSoul
+              </li>
+              <li>
+                $25 Steam Gift Card
+              </li>
+            </ul>
+            <p>{"That's"} over $100 in prizes!</p>
           </Section>
           <footer className={styles.footer}>
             <p>An event lovingly hosted by the Radiant Gardeners</p>
