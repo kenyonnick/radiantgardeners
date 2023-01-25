@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import { Section } from '../src/components/partyfest';
+import { Scoreboard, Section } from '../src/components/partyfest';
 import { GameCards } from '../src/components/partyfest/GameCards/GameCards';
 import { ScheduleDay } from '../src/components/partyfest/ScheduleDay/ScheduleDay';
 import { Team } from '../src/components/partyfest/Team';
@@ -45,6 +45,7 @@ export default function PartyFest () {
               <a href="#games">Games</a>
               <a href="#schedule">Schedule</a>
               <a href="#prizes">Prizes</a>
+              <a href="#scores">Scores</a>
             </nav>
           </header>
           <Section id="teams" style={{ backgroundColor: "#bff", color: "black"}}>
@@ -120,6 +121,10 @@ export default function PartyFest () {
               </li>
             </ul>
             <p>{"That's"} over $100 in prizes!</p>
+          </Section>
+          <Section id="scores" style={{ backgroundColor: "#bff", color: "black"}}>
+            <h1 className={styles.sectionTitle}>Scores</h1>
+            <Scoreboard />
           </Section>
           <footer className={styles.footer}>
             <p>An event lovingly hosted by the Radiant Gardeners</p>

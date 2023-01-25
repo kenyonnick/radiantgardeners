@@ -1,0 +1,25 @@
+.table {
+    min-width: 40vw;
+    background-color: rgba(255,255,255,0.9);
+}
+
+.table thead {
+    font-weight: bold;
+}
+
+.table td {
+    outline: 0.125rem solid black;
+    padding: 0.25em 0.5em;
+}
+
+@media (max-width: 600px) {
+    .table {
+        width: 100%;
+    }
+
+    .table td {
+        padding: 0.25em 0.25em;
+        overflow-wrap: break-word;
+        font-size: 0.9em;
+    }
+}
