@@ -34,7 +34,16 @@ const scores: Day[] = [
         yellow: 7,
         winner: 'xIlyria',
         winningTeam: PURPLE,
-    },{},{},
+    },
+    {
+        green: 9,
+        orange: 14,
+        purple: 9,
+        yellow: 10,
+        winner: 'NotoriousCRANK',
+        winningTeam: ORANGE,
+    },
+    {},
 ];
 
 const teamScore = (days: Day[], team: keyof Omit<Day, 'winner' | 'winningTeam'>) => {
