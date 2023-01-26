@@ -1,4 +1,4 @@
-import { ReactNode } from 'react';
+import { Team, YELLOW, PURPLE, GREEN, ORANGE } from '../../../data';
 import styles from './Scoreboard.module.css';
 
 type Day = {
@@ -7,7 +7,7 @@ type Day = {
     purple?: number;
     yellow?: number;
     winner?: string;
-    winningTeam?: string;
+    winningTeam?: Team;
 };
 
 const scores: Day[] = [
@@ -17,7 +17,7 @@ const scores: Day[] = [
         purple: 12,
         yellow: 15,
         winner: 'Jeice',
-        winningTeam: 'Yellow',
+        winningTeam: YELLOW,
     },
     {
         green: 13,
@@ -25,12 +25,20 @@ const scores: Day[] = [
         purple: 14,
         yellow: 9,
         winner: 'Lilindo_s', 
-        winningTeam: 'Purple',
-    },{},{},{},
+        winningTeam: PURPLE,
+    },
+    {
+        green: 11,
+        orange: 12,
+        purple: 13,
+        yellow: 7,
+        winner: 'xIlyria',
+        winningTeam: PURPLE,
+    },{},{},
 ];
 
 const teamScore = (days: Day[], team: keyof Omit<Day, 'winner' | 'winningTeam'>) => {
-    return scores.map((day) => day[team]).reduce((prev, curr) => {
+    return days.map((day) => day[team]).reduce((prev, curr) => {
         if(curr) return (prev ?? 0) + curr;
         else return prev;
     }, 0);
@@ -58,10 +66,8 @@ export const Scoreboard = () => {
                             <td align="right">{day.orange ?? '?'}</td>
                             <td align="right">{day.purple ?? '?'}</td>
                             <td align="right">{day.yellow ?? '?'}</td>
-                            <td align="center">
+                            <td align="center" style={{ backgroundColor: day.winningTeam?.color }}>
                                 {day.winner ?? '?'}
-                                <br/>
-                                {day.winningTeam}
                             </td>
                         </tr>
                     )

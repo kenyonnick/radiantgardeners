@@ -3,22 +3,22 @@ export type Team = {
     color: string;
 }
 
-const PURPLE: Team = {
+export const PURPLE: Team = {
     name: 'Purple',
     color: '#ca8bff',
 };
 
-const GREEN: Team = {
+export const GREEN: Team = {
     name: 'Green',
     color: '#bfb',
 };
 
-const ORANGE: Team = {
+export const ORANGE: Team = {
     name: 'Orange',
     color: 'orange',
 };
 
-const YELLOW: Team = {
+export const YELLOW: Team = {
     name: 'Yellow',
     color: '#ff4',
 };
