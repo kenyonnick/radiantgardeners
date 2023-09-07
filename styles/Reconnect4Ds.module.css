@@ -7,6 +7,7 @@
   justify-content: space-evenly;
   gap: 2rem;
   padding: 0 2rem;
+  background: #222;
 }
 
 .header {
@@ -100,15 +101,3 @@
   }
 }
 
-@media (prefers-color-scheme: dark) {
-  .card,
-  .footer {
-    border-color: #222;
-  }
-  .code {
-    background: #111;
-  }
-  .logo img {
-    filter: invert(1);
-  }
-}
