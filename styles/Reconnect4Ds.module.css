@@ -1,0 +1,114 @@
+.container {
+  max-width: 600px;
+  min-height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 2rem;
+  padding: 0 2rem;
+}
+
+.header {
+  width: 100%;
+  padding: 1rem 4rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  color: white;
+  gap: 1rem;
+}
+
+.main {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.main div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.main div h4 {
+  margin-top: 1rem;
+}
+
+.main a {
+  color: cyan;
+}
+
+.title a:hover,
+.title a:focus,
+.title a:active {
+  text-decoration: underline;
+}
+
+.title {
+  width: 100%;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-style: normal;
+  word-wrap: break-word;
+}
+
+.description {
+  font-weight: 400;
+  font-style: normal;
+  word-wrap: break-word;
+}
+
+.title,
+.description {
+  line-height: 1;
+  text-align: center;
+}
+
+.links {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+}
+
+.links > div {
+  padding: 0.5rem;
+  border: thin solid black;
+  border-radius: 0.75rem;
+}
+
+.download {
+  padding: 0.4rem 0.9rem;
+  border: thin solid cyan;
+  width: fit-content;
+}
+
+@media (max-width: 600px) {
+  .header {
+    padding-top: 0;
+  }
+
+  .links {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .card,
+  .footer {
+    border-color: #222;
+  }
+  .code {
+    background: #111;
+  }
+  .logo img {
+    filter: invert(1);
+  }
+}
