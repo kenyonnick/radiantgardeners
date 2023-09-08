@@ -76,13 +76,22 @@ You are trying to get to a file path that looks something like this:</p>
             <p>WE ARE NOT RESPONSIBLE FOR LOST DATA WE ARE JUST TRYING TO HELP PEOPLE PREP FOR THE EVENT!</p>
             <h4>4. Launch the game!</h4>
             <p>
-                Save 1 is pre-Re:Mind so you can run around and get any other items you want.
+                Save 0 (Autosave) is in the Garden of Assemblage where you can hop right into Data Battles.
+            </p>
+            <p>
+                Save 1 is pre-Re:Mind in Twilight Town (with my favorite Moogle) so you can run around and get any other items you want.
                 Just keep in mind the rules for DDDD and double check the link above.
             </p>
             <p>Save 2 is post-Re:Mind story and is there just in case you wanted to start the LIMITCUT yourself.</p>
+            <p>Save 3 is really just the same thing as Save 2 but made when you start LIMITCUT.</p>
             <p>
-                Save 3 is the LIMITCUT save file born from Save 2 and is saved in the Garden of Assemblage
+                Save 4 is the LIMITCUT save file born from Save 3 and is saved in the Garden of Assemblage
                 where you can just hop right into data battles.
+            </p>
+            <p>
+                Note: Turns out there are technically 5 save files included. 
+                One of them is the autosave and then we actually have three saves within Re:Mind.
+                I will update these save file numbers to make them more accurate after 
             </p>
         </div>
         <div>

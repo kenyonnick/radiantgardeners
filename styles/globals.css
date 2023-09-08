@@ -16,6 +16,7 @@ body {
   min-height: 100%;
   overflow-x: hidden;
   scroll-behavior: smooth;
+  background: #222;
 }
 
 a {
