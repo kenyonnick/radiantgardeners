@@ -5,7 +5,7 @@ export default function Reconnect4Ds() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Radiant Gardeners</title>
+        <title>DDDD | Radiant Gardeners</title>
         <meta name="description" content="A couple creating cool stuff on the internet together" />
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
@@ -28,7 +28,7 @@ export default function Reconnect4Ds() {
                 Summary
             </h3>
             <p>In order to practice for the upcoming event, <a href="https://www.khguides.com/reconnect/data-doubles/">Dream Drop Data Doubles</a> at <a href="https://www.khguides.com/reconnect/">KHReconnect</a>, you need a Kingdom Hearts III save file at Level 70 on Proud mode.</p>
-            <p>We put together three save files to help you skip past the grinding and get to practicing!</p>
+            <p>We put together save files for Kingdom Hearts III on PC to help you skip past the grinding and get to practicing!</p>
         </div>
         <div>
             <h3>
