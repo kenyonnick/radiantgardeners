@@ -1,8 +1,8 @@
 import Head from 'next/head'
-import { Scoreboard, Section } from '../src/components/partyfest';
-import { GameCards } from '../src/components/partyfest/GameCards/GameCards';
-import { ScheduleDay } from '../src/components/partyfest/ScheduleDay/ScheduleDay';
-import { Team } from '../src/components/partyfest/Team';
+import { Scoreboard, Section } from '@src/components/partyfest';
+import { GameCards } from '@src/components/partyfest/GameCards/GameCards';
+import { ScheduleDay } from '@src/components/partyfest/ScheduleDay/ScheduleDay';
+import { Team } from '@src/components/partyfest/Team';
 import { 
   EVERYONE, 
   FALL_GUYS, 
@@ -18,8 +18,8 @@ import {
   ORANGE_TEAM,
   PURPLE_TEAM,
   YELLOW_TEAM,
-} from '../src/data';
-import styles from '../styles/PartyFest.module.css'
+} from '@src/data';
+import styles from '@styles/PartyFest.module.css'
 
 export default function PartyFest () {
     return (
