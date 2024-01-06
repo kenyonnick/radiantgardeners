@@ -1,7 +1,4 @@
-export type Team = {
-    name: string;
-    color: string;
-}
+import { Player, Team } from "@src/types";
 
 export const PURPLE: Team = {
     name: 'Purple',
@@ -23,124 +20,140 @@ export const YELLOW: Team = {
     color: '#ff4',
 };
 
-export type Player = {
-    name: string;
-    team: Team;
-    twitter?: string;
-    twitch?: string;
-    youtube?: string;
-    img?: string;
-}
+export const UNKNOWN: Team = {
+    name: "Unknown",
+    color: '#000',
+};
+
+export const MYSTERY_GREEN: Player = {
+    name: 'Green Team Member',
+    team: GREEN,
+};
+
+export const MYSTERY_ORANGE: Player = {
+    name: 'Orange Team Member',
+    team: ORANGE,
+};
+
+export const MYSTERY_YELLOW: Player = {
+    name: 'Yellow Team Member',
+    team: YELLOW,
+};
+
+export const MYSTERY_PURPLE: Player = {
+    name: 'Purple Team Member',
+    team: PURPLE,
+};
 
 export const EXTREMESALSAING: Player = {
     name: 'Jay (Moonshot)',
     team: PURPLE,
     twitch: 'moonshotnetwork',
-    img: 'Jay_Purple.png',
+    img: '2023/Jay_Purple.png',
 };
 
 export const FOXTROTPERRY: Player = {
     name: 'FoxtrotPerry',
     team: GREEN,
     twitch: 'foxtrotperry',
-    img: 'FoxtrotPerry_Green.png',
+    img: '2023/FoxtrotPerry_Green.png',
 };
 
 export const NOVANEONGIRL: Player = {
     name: 'NovaNeonGirl',
     team: PURPLE,
-    img: 'NoVa_Purple.png',
+    img: '2023/NoVa_Purple.png',
 };
 
 export const KTWAYFINDER: Player = {
     name: 'KTWayfinder',
     team: GREEN,
     twitch: 'KTWayfinder',
-    img: 'KTWayfinder_Green.png',
+    img: '2023/KTWayfinder_Green.png',
 };
 
 export const LILINDO: Player = {
     name: 'lilindo_s',
     team: PURPLE,
     twitch: 'lilindo_s',
-    img: 'Lilindo_s_Purple.png'
+    img: '2023/Lilindo_s_Purple.png'
 };
 
 export const LUULUSOUL: Player = {
     name: 'Luulu_Soul',
     team: YELLOW,
     twitch: 'LuuluSoul',
-    img: 'LuuluSoul_Yellow.png',
+    img: '2023/LuuluSoul_Yellow.png',
 };
 
 export const LANZOFMASTERS: Player = {
     name: 'LanzOfMasters',
     team: YELLOW,
     twitch: 'LanzOfMasters',
-    img: 'LanzOfMasters_Yellow.png',
+    img: '2023/LanzOfMasters_Yellow.png',
 };
 
 export const ROYALAQUA: Player = {
     name: 'Royalaqua',
     team: GREEN,
     twitch: 'royalaqua',
-    img: 'RoyalAqua_Green.png',
+    img: '2023/RoyalAqua_Green.png',
 };
 
 export const XILYRIA: Player = {
     name: 'xIlyria',
     team: PURPLE,
     twitch: 'xIlyria',
-    img: 'Xilyria_Purple.png'
+    img: '2023/Xilyria_Purple.png'
 };
 
 export const MOCHOCOLATE: Player = {
     name: 'Mochocolate9k',
     team: ORANGE,
     twitch: 'Mochocolate9k',
-    img: 'Mochocolate9k_Orange.png',
+    img: '2023/Mochocolate9k_Orange.png',
 };
 
 export const NOTORCRANK: Player = {
     name: 'NotoriousCRANK',
     team: ORANGE,
     twitch: 'NotoriousCRANK',
-    img: 'NotoriousCRANK_Orange.png',
+    img: '2023/NotoriousCRANK_Orange.png',
 };
 
 export const ARIEFJOHAN: Player = {
     name: 'AriefJohan',
     team: YELLOW,
     twitch: 'AriefJohan',
-    img: 'AriefJohan_Yellow.png',
+    img: '2023/AriefJohan_Yellow.png',
 };
 
 export const THENINJAROID: Player = {
     name: 'TheNinjaroid',
     team: GREEN,
     twitch: 'TheNinjaroids',
-    img: 'theninjaroid_Green.png',
+    img: '2023/theninjaroid_Green.png',
 };
 
 export const JOHNNY_BOOMBOTZ: Player = {
     name: 'Johnny_Boombotz',
     team: ORANGE,
     twitch: 'Johnny_Boombotz',
-    img: 'Johnny_Boombotz_Orange.png'
+    img: '2023/Johnny_Boombotz_Orange.png'
 };
 
 export const JEICE: Player = {
     name: 'Jeice (PixelScrubs)',
     team: YELLOW,
     twitch: 'pixelscrubs',
-    img: 'Jeice_Yellow.png',
+    img: '2023/Jeice_Yellow.png',
 };
 
 export const RITALI: Player = {
     name: 'Ritali (PixelScrubs)',
     team: ORANGE,
     twitch: 'pixelscrubs',
-    img: 'Ritali_Orange.png'
+    img: '2023/Ritali_Orange.png'
 };
 
 export const EVERYONE: Player = {
@@ -171,26 +184,38 @@ export const ALL_PLAYERS: Player[] = [
 ];
 
 export const ULTIMATE_CHICKEN_HORSE_PLAYERS = [
-    EXTREMESALSAING,
-    FOXTROTPERRY,
-    JOHNNY_BOOMBOTZ,
-    JEICE
+    MYSTERY_GREEN,
+    MYSTERY_YELLOW,
+    MYSTERY_PURPLE,
+    MYSTERY_ORANGE,
 ];
 
 export const GANG_BEASTS_PLAYERS = [
-    KTWAYFINDER,
-    LILINDO,
-    LUULUSOUL,
-    RITALI
+    MYSTERY_GREEN,
+    MYSTERY_YELLOW,
+    MYSTERY_PURPLE,
+    MYSTERY_ORANGE,
 ];
 
-export const MARIO_PARTY_PLAYERS = [LANZOFMASTERS, ROYALAQUA, XILYRIA, MOCHOCOLATE];
+export const CAKE_BASH_PLAYERS = [
+    MYSTERY_GREEN,
+    MYSTERY_YELLOW,
+    MYSTERY_PURPLE,
+    MYSTERY_ORANGE,
+];
 
 export const GOLF_WITH_YOUR_FRIENDS_PLAYERS = [
-    NOTORCRANK, 
-    ARIEFJOHAN, 
-    THENINJAROID, 
-    NOVANEONGIRL
+    MYSTERY_GREEN,
+    MYSTERY_YELLOW,
+    MYSTERY_PURPLE,
+    MYSTERY_ORANGE,
+];
+
+export const TRICKY_TOWERS_PLAYERS = [
+    MYSTERY_GREEN,
+    MYSTERY_YELLOW,
+    MYSTERY_PURPLE,
+    MYSTERY_ORANGE,
 ];
 
 export const GREEN_TEAM = [FOXTROTPERRY, THENINJAROID, KTWAYFINDER, ROYALAQUA];

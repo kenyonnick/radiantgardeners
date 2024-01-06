@@ -1,0 +1,45 @@
+.team {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 1rem;
+    margin-top: 3rem;
+    width: 100%;
+    align-items: center;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    width: 100vw;
+    padding: 0rem 2rem;
+    align-items: center;
+    scroll-behavior: smooth;
+    /* scroll-snap-type: x proximity !important; */
+}
+
+
+.name {
+    text-transform: uppercase;
+    font-family: acier-bat-noir, sans-serif;
+    font-size: 36pt;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.img {
+    width: 40%;
+    scroll-snap-align: center;
+}
+
+.indiana-scroll-container--dragging .img {
+    scroll-snap-align: none;
+}
+
+@media (max-width: 600px) {
+    .img {
+        width: 80%;
+    }
+}

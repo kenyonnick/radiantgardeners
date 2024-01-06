@@ -1,17 +1,26 @@
 import styles from './ScheduleDay.module.css';
 import { addHours } from "date-fns";
 import format from "date-fns/format";
-import { Game, Player } from '../../../data';
+import { Game, Player } from '../../../data/partyfest2023';
 import { IoLogoTwitch } from 'react-icons/io5';
+import { useMemo } from 'react';
 
 export type ScheduleDayProps = {
     date: Date;
     game: Game;
-    durationHrs: number;
+    durationHrs?: number;
     players: Player[];
 }
 
 export const ScheduleDay = ({ date, game, durationHrs, players }: ScheduleDayProps) => {
+    const showtime = useMemo(() => {
+        if(durationHrs) {
+            return `${format(date, 'h:mma')} - ${format(addHours(date, durationHrs), 'h:mma')} ${format(date, 'zzz')}`;
+        } else {
+            return "To Be Announced";
+        }
+    }, [date, durationHrs]);
+
     return (
         <div className={styles.container}>
             <div className={styles.topRow}>
@@ -25,8 +34,8 @@ export const ScheduleDay = ({ date, game, durationHrs, players }: ScheduleDayPro
                     }}
                 />
                 <div className={styles.datetime}>
-                    <h2>{format(date, 'LLL do')}</h2>
-                    <h3>{format(date, 'h:mma')} - {format(addHours(date, durationHrs), 'h:mma')} EST</h3>
+                    <h2>{format(date, 'LLLL do')}</h2>
+                    <h3>{showtime}</h3>
                 </div>
                 
             </div>

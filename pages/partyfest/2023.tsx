@@ -2,7 +2,7 @@ import Head from 'next/head'
 import { Scoreboard, Section } from '@src/components/partyfest';
 import { GameCards } from '@src/components/partyfest/GameCards/GameCards';
 import { ScheduleDay } from '@src/components/partyfest/ScheduleDay/ScheduleDay';
-import { Team } from '@src/components/partyfest/Team';
+import { TeamCards } from '@src/components/partyfest/TeamCards';
 import { 
   EVERYONE, 
   FALL_GUYS, 
@@ -18,7 +18,8 @@ import {
   ORANGE_TEAM,
   PURPLE_TEAM,
   YELLOW_TEAM,
-} from '@src/data';
+  GAMES_LIST
+} from '@src/data/partyfest2023';
 import styles from '@styles/PartyFest2023.module.css'
 
 export default function PartyFest () {
@@ -60,16 +61,16 @@ export default function PartyFest () {
               All four team members will work together in Fall Guys to finish the competition!
             </p>
             <div>
-              <Team team={GREEN_TEAM} name="Green Team" />
-              <Team team={ORANGE_TEAM} name="Orange Team" />
-              <Team team={PURPLE_TEAM} name="Purple Team" />
-              <Team team={YELLOW_TEAM} name="Yellow Team" />
+              <TeamCards team={GREEN_TEAM} name="Green Team" />
+              <TeamCards team={ORANGE_TEAM} name="Orange Team" />
+              <TeamCards team={PURPLE_TEAM} name="Purple Team" />
+              <TeamCards team={YELLOW_TEAM} name="Yellow Team" />
             </div>
           </Section>
           <Section id="games" style={{ backgroundColor: "#fbf", color: "black"}}>
             <h1 className={styles.sectionTitle}>Games</h1>
             <p>Using an advanced and complex algorithm {"we're"} calling {'"Personal Experience"'}, we have selected some of the best party games available.</p>
-            <GameCards />
+            <GameCards gamesList={GAMES_LIST}/>
           </Section>
           <Section id="schedule" style={{ backgroundColor: "#bff", color: "black"}}>
             <h1 className={styles.sectionTitle}>Schedule</h1>

@@ -1,5 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
-import { Game } from '../../../data';
+import { Game } from '../../../data/partyfest2023';
 import styles from './GameCard.module.css';
 
 

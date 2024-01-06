@@ -1,4 +1,4 @@
-import { Team, YELLOW, PURPLE, GREEN, ORANGE } from '../../../data';
+import { Team, YELLOW, PURPLE, GREEN, ORANGE } from '../../../data/partyfest2023';
 import styles from './Scoreboard.module.css';
 
 type ScoreRow = {

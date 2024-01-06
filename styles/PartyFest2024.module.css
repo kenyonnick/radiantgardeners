@@ -38,7 +38,7 @@
 .title {
   width: 100%;
   margin-bottom: -2rem;
-  font-size: 12rem;
+  font-size: 16rem;
   text-transform: uppercase;
   word-wrap: break-word;
   font-family: acier-bat-noir, sans-serif;
@@ -90,7 +90,7 @@
 
 .sectionTitle {
   font-size: 6rem;
-  font-family: acier-bat-gris, sans-serif;
+  font-family: acier-bat-solid, sans-serif;
   font-weight: 400;
   font-style: normal;
 }
