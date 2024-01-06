@@ -15,5 +15,6 @@ export type Player = {
     twitter?: string;
     twitch?: string;
     youtube?: string;
+    instagram?: string;
     img?: string;
 }

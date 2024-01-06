@@ -20,9 +20,11 @@ import {
   YELLOW_TEAM,
   TRICKY_TOWERS,
   TRICKY_TOWERS_PLAYERS,
-  GAMES_LIST
+  GAMES_LIST,
+  MYSTERY_GAME
 } from '@src/data/partyfest2024';
 import styles from '@styles/PartyFest2024.module.css'
+import { TeamList } from '@src/components/partyfest/TeamList';
 
 export default function PartyFest () {
     return (
@@ -58,22 +60,12 @@ export default function PartyFest () {
           </Section>
           <Section id="teams" style={{ backgroundColor: "#fbf", color: "black"}}>
             <h1 className={styles.sectionTitle}>Teams</h1>
-            <p>{"We're"} bringing together some of our favorite content creators to form teams highly capable of partying together.</p>
-            <br />
-            <p>
-              There will be 4 teams, each with 5 members. {"That's 20 participants total!"}
-              <br/> 
-              Each member will represent their team in one of the games.
-              <br />
-              All four team members will work together in Fall Guys to finish the competition!
-            </p>
-            <br />
-            <p><i>Teams will be announced soon!</i></p>
+            <p><i>{"We're"} bringing together some of our favorite content creators to form teams highly capable of partying together.</i></p>
             <div>
-              <TeamCards team={GREEN_TEAM} name="Green Team" />
-              <TeamCards team={ORANGE_TEAM} name="Orange Team" />
-              <TeamCards team={PURPLE_TEAM} name="Purple Team" />
-              <TeamCards team={YELLOW_TEAM} name="Yellow Team" />
+              <TeamList team={GREEN_TEAM} name="Team Green" />
+              <TeamList team={ORANGE_TEAM} name="Team Orange" />
+              <TeamList team={PURPLE_TEAM} name="Team Purple" />
+              <TeamList team={YELLOW_TEAM} name="Team Yellow" />
             </div>
           </Section>
           <Section id="schedule" style={{ backgroundColor: "#bff", color: "black"}}>
@@ -81,38 +73,38 @@ export default function PartyFest () {
             <div style={{ display: 'flex', flexDirection: 'column', gap: '2rem', paddingTop: '1rem'}}>
               <ScheduleDay 
                 date={new Date(2024, 0, 29, 19)} 
-                game={CAKE_BASH} 
-                durationHrs={2} 
+                game={MYSTERY_GAME} 
+                // durationHrs={2} 
                 players={CAKE_BASH_PLAYERS}
               />
               <ScheduleDay 
                 date={new Date(2024, 0, 30, 19)} 
-                game={TRICKY_TOWERS} 
-                durationHrs={2} 
+                game={MYSTERY_GAME} 
+                // durationHrs={2} 
                 players={TRICKY_TOWERS_PLAYERS}
               />
               <ScheduleDay 
                 date={new Date(2024, 0, 31, 19)} 
-                game={ULTIMATE_CHICKEN_HORSE} 
-                durationHrs={2} 
+                game={MYSTERY_GAME} 
+                // durationHrs={2} 
                 players={ULTIMATE_CHICKEN_HORSE_PLAYERS}
               />
               <ScheduleDay 
                 date={new Date(2024, 1, 1, 19)} 
-                game={GANG_BEASTS} 
-                durationHrs={2} 
+                game={MYSTERY_GAME} 
+                // durationHrs={2} 
                 players={GANG_BEASTS_PLAYERS}
               />
               <ScheduleDay 
                 date={new Date(2024, 1, 2, 11)} 
-                game={GOLF_WITH_YOUR_FRIENDS}
-                durationHrs={1} 
+                game={MYSTERY_GAME}
+                // durationHrs={1} 
                 players={GOLF_WITH_YOUR_FRIENDS_PLAYERS}
               />
               <ScheduleDay 
                 date={new Date(2024, 1, 3, 20)} 
-                game={FALL_GUYS}
-                durationHrs={1} 
+                game={MYSTERY_GAME}
+                // durationHrs={1} 
                 players={[EVERYONE]}
               />
             </div>

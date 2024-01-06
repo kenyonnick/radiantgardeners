@@ -84,11 +84,13 @@
     }
     .topRow > * {
         width: 100%;
+        gap: 0.5rem;
     }
     .datetime {
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
+        border-radius: 1rem;
     }
     .players {
         width: 100%;

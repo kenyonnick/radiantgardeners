@@ -11,7 +11,7 @@
     text-align: center;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 1080px) {
     .section {
         padding: 1.5rem;
     }
