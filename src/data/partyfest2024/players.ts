@@ -92,7 +92,7 @@ export const LILINDO: Player = {
 
 export const FAUXRETRO: Player = {
     name: 'FauxRetro',
-    team: YELLOW,
+    team: ORANGE,
     twitch: 'FauxRetro',
     youtube: '@FauxRetro',
     twitter: '@FauxRetro',
@@ -126,7 +126,7 @@ export const UPHILLSUBSET: Player = {
 
 export const MOMOPKMN: Player = {
     name: 'MomoPkmn95',
-    team: ORANGE,
+    team: YELLOW,
     twitch: 'MomoPkmn95',
     youtube: '@MomoPkmn95',
     twitter: '@MomoPkmn95',
