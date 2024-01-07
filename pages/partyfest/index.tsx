@@ -114,7 +114,7 @@ export default function PartyFest () {
             <p>Each member of the winning team will win:</p>
             <ul style={{ marginLeft: '2rem'}}>
               <li>
-                Exclusive WINNER Edition of the Party Fest Sweatshirt
+                Exclusive WINNER Party Fest merch
               </li>
               <li>
                 Party Crown Emote by LuuluSoul

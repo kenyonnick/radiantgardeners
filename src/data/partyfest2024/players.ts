@@ -105,7 +105,7 @@ export const VIOLIN: Player = {
     twitch: 'Violin',
     youtube: '@ViolinSpeedruns',
     twitter: '@ViolinSpeedruns',
-    img: 'https://static-cdn.jtvnw.net/jtv_user_pictures/e4a5b80d-0bcf-4108-bb04-580d3bb922ac-profile_image-150x150.png',
+    img: imgRoot+'Violin.jpg',
 };
 
 export const ROYALAQUA: Player = {
@@ -114,7 +114,7 @@ export const ROYALAQUA: Player = {
     twitch: 'royalaqua',
     youtube: '@royalaqua7',
     twitter: '@royalaqua7',
-    img: 'https://static-cdn.jtvnw.net/jtv_user_pictures/190d5bb7-8031-42da-80dc-069a4e61f7ed-profile_image-150x150.png',
+    img: imgRoot+'RoyalAqua.png',
 };
 
 export const UPHILLSUBSET: Player = {
@@ -184,7 +184,7 @@ export const RITALI: Player = {
     team: ORANGE,
     twitch: 'pixelscrubs',
     twitter: '@NeonRitali',
-    img: '2023/Ritali_Orange.png' // TODO
+    img: imgRoot+'Ritali.png'
 };
 
 export const KHGUIDES: Player = {
