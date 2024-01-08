@@ -1,4 +1,4 @@
-import { Player, Team } from "@src/types";
+import { Player, Team, Teams } from "@src/types";
 
 export const PURPLE: Team = {
     name: 'Purple',
@@ -295,3 +295,27 @@ export const GREEN_TEAM = ALL_PLAYERS.filter((p) => p.team === GREEN);
 export const ORANGE_TEAM = ALL_PLAYERS.filter((p) => p.team === ORANGE);
 export const PURPLE_TEAM = ALL_PLAYERS.filter((p) => p.team === PURPLE);
 export const YELLOW_TEAM = ALL_PLAYERS.filter((p) => p.team === YELLOW);
+
+type TeamsEntry = {
+    team: Team;
+    players: Player[];
+}
+
+export const TEAMS: Teams = {
+    Green: {
+        team: GREEN,
+        players: GREEN_TEAM,
+    },
+    Orange: {
+        team: ORANGE,
+        players: ORANGE_TEAM,
+    },
+    Purple: {
+        team: PURPLE,
+        players: PURPLE_TEAM,
+    },
+    Yellow: {
+        team: YELLOW,
+        players: YELLOW_TEAM,
+    },
+}

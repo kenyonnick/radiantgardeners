@@ -25,6 +25,7 @@ import {
 } from '@src/data/partyfest2024';
 import styles from '@styles/PartyFest2024.module.css'
 import { TeamList } from '@src/components/partyfest/TeamList';
+import { Merch } from '@src/components/partyfest/Merch';
 
 export default function PartyFest () {
     return (
@@ -48,6 +49,7 @@ export default function PartyFest () {
             <nav className={styles.links}>
               <a href="#games">Games</a>
               <a href="#teams">Teams</a>
+              <a href="#merch">Merch</a>
               <a href="#schedule">Schedule</a>
               <a href="#prizes">Prizes</a>
               {/* <a href="#scores">Scores</a> */}
@@ -68,7 +70,13 @@ export default function PartyFest () {
               <TeamList team={YELLOW_TEAM} name="Team Yellow" />
             </div>
           </Section>
-          <Section id="schedule" style={{ backgroundColor: "#bff", color: "black"}}>
+          <Section id="merch" style={{ backgroundColor: "#bff", color: "black"}}>
+            <h1 className={styles.sectionTitle}>Merch</h1>
+            <p><i>Support your favorite team by sporting some merch!</i></p>
+            <br />
+            <Merch />
+          </Section>
+          <Section id="schedule" style={{ backgroundColor: "#fbf", color: "black"}}>
             <h1 className={styles.sectionTitle}>Schedule</h1>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '2rem', paddingTop: '1rem'}}>
               <ScheduleDay 
@@ -109,7 +117,7 @@ export default function PartyFest () {
               />
             </div>
           </Section>
-          <Section id="prizes" style={{ backgroundColor: "#fbf", color: "black"}}>
+          <Section id="prizes" style={{ backgroundColor: "#bff", color: "black"}}>
             <h1 className={styles.sectionTitle}>Prizes</h1>
             <p>Each member of the winning team will win:</p>
             <ul style={{ marginLeft: '2rem'}}>
@@ -123,7 +131,7 @@ export default function PartyFest () {
                 $25 Steam Gift Card
               </li>
             </ul>
-            <p>{"That's"} over $100 in prizes per person!</p>
+            <p>{"That's"} over $50 in prizes per person!</p>
           </Section>
           {/* <Section id="scores" style={{ backgroundColor: "#bff", color: "black"}}>
             <h1 className={styles.sectionTitle}>Scores</h1>

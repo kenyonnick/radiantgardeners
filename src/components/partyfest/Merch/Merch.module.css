@@ -1,0 +1,34 @@
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.teams {
+    display: flex;
+    gap: 1rem;
+}
+
+.teamButton {
+    background-color: white;
+    color: black;
+    text-transform: uppercase;
+    padding: 0.5rem;
+    font-weight: bold;
+}
+
+.teamButton:hover {
+    cursor: pointer;
+}
+
+.listings {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}

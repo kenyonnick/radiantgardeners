@@ -4,8 +4,12 @@ export type Game = {
     players: number;
 };
 
+export type TeamsKey = 'Green' | 'Orange' | 'Purple' | 'Yellow'; 
+
+export type TeamName = TeamsKey | 'Unknown' | 'Everyone';
+
 export type Team = {
-    name: string;
+    name: TeamName;
     color: string;
 }
 
@@ -18,3 +22,10 @@ export type Player = {
     instagram?: string;
     img?: string;
 }
+
+export type TeamsEntry = {
+    team: Team;
+    players: Player[];
+}
+
+export type Teams = Record<TeamsKey, TeamsEntry>;
