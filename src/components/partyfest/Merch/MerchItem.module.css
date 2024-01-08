@@ -57,3 +57,10 @@
     padding: 0.25rem;
     /* border: thin solid black; */
 }
+
+/* iPad */
+@media (max-width: 1280px) {
+    .card {
+        width: 100%
+    }
+}
