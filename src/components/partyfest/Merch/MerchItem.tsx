@@ -49,7 +49,9 @@ export const MerchItem = ({ listing, team }: MerchItemProps) => {
             </div>
             <div className={styles.info}>
                 <h2>{listing.name}</h2>
-                <h3>{priceFmt.format(listing.price)}</h3>
+                <div className={styles.price}>
+                    <h3>{priceFmt.format(listing.price)}</h3><span color="darkgray">+S&H</span>
+                </div>
                 <a href={listing.url} target="_blank" rel="noreferrer">Buy it on Etsy</a>
             </div>
         </div>

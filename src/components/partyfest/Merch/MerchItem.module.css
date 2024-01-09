@@ -55,7 +55,13 @@
     background-color: white;
     color: black;
     padding: 0.25rem;
-    /* border: thin solid black; */
+    /* border: thin solid darkgray; */
+}
+
+.price {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
 }
 
 /* iPad */
