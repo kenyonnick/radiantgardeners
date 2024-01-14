@@ -44,7 +44,7 @@ export default function PartyFest () {
             </h1>
             <h2 className={styles.date}>January 29<sup style={{ fontSize: '0.5em'}}>th</sup> - February 3<sup style={{ fontSize: '0.5em'}}>rd</sup>, 2024</h2>
             <h2 className={styles.description}>
-                A 5 day online event celebrating party games and community.
+                A 6 day online event celebrating party games and community.
             </h2>
             <nav className={styles.links}>
               <a href="#games">Games</a>
