@@ -2,7 +2,6 @@ import Head from 'next/head'
 import { Scoreboard, Section } from '@src/components/partyfest';
 import { GameCards } from '@src/components/partyfest/GameCards/GameCards';
 import { ScheduleDay } from '@src/components/partyfest/ScheduleDay/ScheduleDay';
-import { TeamCards } from '@src/components/partyfest/TeamCards';
 import { 
   EVERYONE, 
   FALL_GUYS, 
@@ -21,7 +20,6 @@ import {
   TRICKY_TOWERS,
   TRICKY_TOWERS_PLAYERS,
   GAMES_LIST,
-  MYSTERY_GAME
 } from '@src/data/partyfest2024';
 import styles from '@styles/PartyFest2024.module.css'
 import { TeamList } from '@src/components/partyfest/TeamList';
@@ -57,7 +55,7 @@ export default function PartyFest () {
           </header>
           <Section id="games" style={{ backgroundColor: "#bff", color: "black"}}>
             <h1 className={styles.sectionTitle}>Games</h1>
-            <p>Using an advanced and complex algorithm {"we're"} calling {'"Personal Experience"'}, we have selected some of the best party games available.</p>
+            <p><i>Using an advanced and complex algorithm {"we're"} calling {'"Personal Experience"'}, we have selected some of the best party games available.</i></p>
             <GameCards gamesList={GAMES_LIST}/>
           </Section>
           <Section id="teams" style={{ backgroundColor: "#fbf", color: "black"}}>
@@ -152,6 +150,7 @@ export default function PartyFest () {
               <a target="_blank" rel="noreferrer" href="https://www.twitter.com/radiantgardenrs">Twitter</a>
               <a target="_blank" rel="noreferrer" href="https://discord.gg/qw76xS25A6">Discord</a>
             </div>
+            <p>© Radiant Gardeners 2024</p>
           </footer>
       </div>
     );
