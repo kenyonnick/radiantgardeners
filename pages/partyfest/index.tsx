@@ -81,38 +81,38 @@ export default function PartyFest () {
             <div style={{ display: 'flex', flexDirection: 'column', gap: '2rem', paddingTop: '1rem'}}>
               <ScheduleDay 
                 date={new Date(2024, 0, 29, 19)} 
-                game={MYSTERY_GAME} 
-                // durationHrs={2} 
+                game={CAKE_BASH} 
+                durationHrs={2} 
                 players={CAKE_BASH_PLAYERS}
               />
               <ScheduleDay 
                 date={new Date(2024, 0, 30, 19)} 
-                game={MYSTERY_GAME} 
-                // durationHrs={2} 
+                game={TRICKY_TOWERS} 
+                durationHrs={2} 
                 players={TRICKY_TOWERS_PLAYERS}
               />
               <ScheduleDay 
                 date={new Date(2024, 0, 31, 19)} 
-                game={MYSTERY_GAME} 
-                // durationHrs={2} 
+                game={ULTIMATE_CHICKEN_HORSE} 
+                durationHrs={2} 
                 players={ULTIMATE_CHICKEN_HORSE_PLAYERS}
               />
               <ScheduleDay 
                 date={new Date(2024, 1, 1, 19)} 
-                game={MYSTERY_GAME} 
-                // durationHrs={2} 
+                game={GANG_BEASTS} 
+                durationHrs={2} 
                 players={GANG_BEASTS_PLAYERS}
               />
               <ScheduleDay 
                 date={new Date(2024, 1, 2, 11)} 
-                game={MYSTERY_GAME}
-                // durationHrs={1} 
+                game={GOLF_WITH_YOUR_FRIENDS}
+                durationHrs={1} 
                 players={GOLF_WITH_YOUR_FRIENDS_PLAYERS}
               />
               <ScheduleDay 
                 date={new Date(2024, 1, 3, 20)} 
-                game={MYSTERY_GAME}
-                // durationHrs={1} 
+                game={FALL_GUYS}
+                durationHrs={1} 
                 players={[EVERYONE]}
               />
             </div>

@@ -256,50 +256,47 @@ export const ALL_PLAYERS: Player[] = [
     VETELINO,
 ];
 
-export const ULTIMATE_CHICKEN_HORSE_PLAYERS = [
-    MYSTERY_GREEN,
-    MYSTERY_YELLOW,
-    MYSTERY_PURPLE,
-    MYSTERY_ORANGE,
-];
-
-export const GANG_BEASTS_PLAYERS = [
-    MYSTERY_GREEN,
-    MYSTERY_YELLOW,
-    MYSTERY_PURPLE,
-    MYSTERY_ORANGE,
-];
-
 export const CAKE_BASH_PLAYERS = [
-    MYSTERY_GREEN,
-    MYSTERY_YELLOW,
-    MYSTERY_PURPLE,
-    MYSTERY_ORANGE,
-];
-
-export const GOLF_WITH_YOUR_FRIENDS_PLAYERS = [
-    MYSTERY_GREEN,
-    MYSTERY_YELLOW,
-    MYSTERY_PURPLE,
-    MYSTERY_ORANGE,
+    ROYALAQUA,
+    PAOPUKOMI,
+    MOMOPKMN,
+    FAUXRETRO,
 ];
 
 export const TRICKY_TOWERS_PLAYERS = [
-    MYSTERY_GREEN,
-    MYSTERY_YELLOW,
-    MYSTERY_PURPLE,
-    MYSTERY_ORANGE,
+    UPHILLSUBSET,
+    SAHARAH,
+    NOTORCRANK,
+    JEICE,
 ];
+
+export const ULTIMATE_CHICKEN_HORSE_PLAYERS = [
+    THENINJAROID,
+    BRANDONGLOVICH,
+    GAMECROIX,
+    RITALI,
+];
+
+export const GANG_BEASTS_PLAYERS = [
+    KTWAYFINDER,
+    VIOLIN,
+    KHGUIDES,
+    BAMBINA
+];
+
+export const GOLF_WITH_YOUR_FRIENDS_PLAYERS = [
+    FOXTROTPERRY,
+    CRAZYCOMICS,
+    VETELINO,
+    LILINDO
+];
+
+
 
 export const GREEN_TEAM = ALL_PLAYERS.filter((p) => p.team === GREEN);
 export const ORANGE_TEAM = ALL_PLAYERS.filter((p) => p.team === ORANGE);
 export const PURPLE_TEAM = ALL_PLAYERS.filter((p) => p.team === PURPLE);
 export const YELLOW_TEAM = ALL_PLAYERS.filter((p) => p.team === YELLOW);
-
-type TeamsEntry = {
-    team: Team;
-    players: Player[];
-}
 
 export const TEAMS: Teams = {
     Green: {
