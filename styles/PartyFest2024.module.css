@@ -88,6 +88,10 @@
   box-shadow: 4px 7px #111;
 }
 
+.linkUnderline {
+  text-decoration: underline;
+}
+
 .sectionTitle {
   font-size: 6rem;
   font-family: acier-bat-solid, sans-serif;

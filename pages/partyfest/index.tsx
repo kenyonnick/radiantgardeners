@@ -78,6 +78,13 @@ export default function PartyFest () {
           </Section>
           <Section id="schedule" style={{ backgroundColor: "#fbf", color: "black"}}>
             <h1 className={styles.sectionTitle}>Schedule</h1>
+            <p><i>Each event will be streamed on the {' '}
+              <a href="https://www.twitch.tv/radiantgardeners" className={styles.linkUnderline}>
+                Radiant Gardeners
+              </a>
+              {' '}
+              Twitch channel.
+            </i></p>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '2rem', paddingTop: '1rem'}}>
               <ScheduleDay 
                 date={new Date(2024, 0, 29, 19)} 
