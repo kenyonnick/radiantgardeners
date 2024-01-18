@@ -15,7 +15,7 @@ export type ScheduleDayProps = {
 export const ScheduleDay = ({ date, game, durationHrs, players }: ScheduleDayProps) => {
     const showtime = useMemo(() => {
         if(durationHrs) {
-            return `${format(date, 'h:mma')} - ${format(addHours(date, durationHrs), 'h:mma')} ${format(date, 'zzz')}`;
+            return `${format(date, 'h:mma')} - ${format(addHours(date, durationHrs), 'h:mma')} EST`;
         } else {
             return "To Be Announced";
         }
