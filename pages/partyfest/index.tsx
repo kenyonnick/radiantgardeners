@@ -111,13 +111,13 @@ export default function PartyFest () {
               <ScheduleDay 
                 date={new Date(2024, 1, 2, 11)} 
                 game={GOLF_WITH_YOUR_FRIENDS}
-                durationHrs={1} 
+                durationHrs={2} 
                 players={GOLF_WITH_YOUR_FRIENDS_PLAYERS}
               />
               <ScheduleDay 
-                date={new Date(2024, 1, 3, 20)} 
+                date={new Date(2024, 1, 3, 19)} 
                 game={FALL_GUYS}
-                durationHrs={1} 
+                durationHrs={2} 
                 players={[EVERYONE]}
               />
             </div>
