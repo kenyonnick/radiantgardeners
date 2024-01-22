@@ -115,9 +115,10 @@ export default function PartyFest () {
                 players={GOLF_WITH_YOUR_FRIENDS_PLAYERS}
               />
               <ScheduleDay 
-                date={new Date(2024, 1, 3, 19)} 
+                date={new Date(2024, 1, 3, 19, 30)} 
                 game={FALL_GUYS}
-                durationHrs={2} 
+                durationHrs={1}
+                durationMins={30} 
                 players={[EVERYONE]}
               />
             </div>
