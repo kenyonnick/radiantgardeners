@@ -14,17 +14,17 @@ const priceFmt = new Intl.NumberFormat("en-US", {
 
 type MerchItemProps = {
     listing: MerchListing;
-    team: TeamsKey;
+    team?: TeamsKey;
 }
 
-function buildImageUrl(key: string, team: TeamsKey, img: string) {
-    return `${imgRoot}/${key}/${team.toLowerCase()}/${img}`;
+function buildImageUrl(key: string, img: string, team?: TeamsKey) {
+    return team ? `${imgRoot}/${key}/${team.toLowerCase()}/${img}` : `${imgRoot}/${key}/${img}`;
 } 
 
 export const MerchItem = ({ listing, team }: MerchItemProps) => {
     const [imgIndex, setImgIndex] = useState(0);
     const mainImageUrl = useMemo(() => {
-        return buildImageUrl(listing.imageKey, team, listing.images[imgIndex]);
+        return buildImageUrl(listing.imageKey, listing.images[imgIndex], team);
     }, [imgIndex, listing.imageKey, listing.images, team]);
 
     const handleGalleryClick = useCallback((index: number) => {
@@ -39,7 +39,7 @@ export const MerchItem = ({ listing, team }: MerchItemProps) => {
                     const key = `${listing.name} gallery image ${index}`;
                     return (<img
                         key={key}
-                        src={buildImageUrl(listing.imageKey, team, img)} 
+                        src={buildImageUrl(listing.imageKey, img, team)} 
                         alt={key}
                         onClick={(e) => handleGalleryClick(index)}
                         className={index === imgIndex ? styles.selected : undefined}

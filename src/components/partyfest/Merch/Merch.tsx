@@ -69,7 +69,21 @@ export const Merch = () => {
                 </button>
             ))}
         </div>
+        {selectedTeam === 'Purple' && 
+            (<p>
+                <i>
+                Unfortunately, due to an issue with our supplier, we had to change the design of the Team Purple hoodie.
+                </i>
+            </p>)
+        }
         <div className={styles.listings}>
+            <MerchItem key={`merch-listing-sticker`} listing={{
+                name: 'Poppy the Penguin Magnet',
+                price: 5.46,
+                url: 'https://designedbyradiant.etsy.com/listing/1653550029/poppy-the-party-penguin-magnet',
+                imageKey: 'sticker',
+                images: ['front.jpg', 'context.jpg'],
+            }}/>
             {listings.map((listing: MerchListing) => {
                 return (
                     <MerchItem key={`merch-listing-${listing.name}`} listing={listing} team={selectedTeam} />
