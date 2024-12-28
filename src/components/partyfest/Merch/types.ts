@@ -1,6 +1,6 @@
 export type MerchListing = {
     name: string;
-    price: number;
+    price: number | string;
     url: string;
     imageKey: string;
     images: string[];

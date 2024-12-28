@@ -77,16 +77,16 @@ export const Merch = () => {
             </p>)
         }
         <div className={styles.listings}>
-            <MerchItem key={`merch-listing-sticker`} listing={{
+            <MerchItem key={`merch-listing-sticker`} year={2024} listing={{
                 name: 'Poppy the Penguin Magnet',
-                price: 5.46,
+                price: 10.35,
                 url: 'https://designedbyradiant.etsy.com/listing/1653550029/poppy-the-party-penguin-magnet',
                 imageKey: 'sticker',
                 images: ['front.jpg', 'context.jpg'],
             }}/>
             {listings.map((listing: MerchListing) => {
                 return (
-                    <MerchItem key={`merch-listing-${listing.name}`} listing={listing} team={selectedTeam} />
+                    <MerchItem key={`merch-listing-${listing.name}`} year={2024} listing={listing} team={selectedTeam} />
                 )
             })}
         </div>

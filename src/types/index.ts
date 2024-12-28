@@ -4,7 +4,7 @@ export type Game = {
     players: number;
 };
 
-export type TeamsKey = 'Green' | 'Orange' | 'Purple' | 'Yellow'; 
+export type TeamsKey = 'Green' | 'Orange' | 'Purple' | 'Yellow' | 'No Team'; 
 
 export type TeamName = TeamsKey | 'Unknown' | 'Everyone';
 
@@ -16,10 +16,13 @@ export type Team = {
 export type Player = {
     name: string;
     team: Team;
+    pronouns?: string;
     twitter?: string;
+    bluesky?: string;
     twitch?: string;
     youtube?: string;
     instagram?: string;
+    website?: string;
     img?: string;
 }
 

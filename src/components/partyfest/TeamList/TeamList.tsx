@@ -1,7 +1,8 @@
 /* eslint-disable @next/next/no-img-element */
 import styles from './TeamList.module.css';
 import { Player } from "@src/types";
-import { IoLogoInstagram, IoLogoTwitch, IoLogoTwitter, IoLogoYoutube } from 'react-icons/io5';
+import { IoGlobeOutline, IoLogoInstagram, IoLogoTwitch, IoLogoWebComponent, IoLogoYoutube } from 'react-icons/io5';
+import { RiBlueskyFill } from "react-icons/ri";
 
 export type TeamListProps = {
     team: Player[];
@@ -28,7 +29,9 @@ export const TeamList = ({ team, name }: TeamListProps) => {
                                 }}
                             />
                             <div className={styles.playerInfo}>
-                                <h3>{player.name}</h3>
+                                <h3>{player.name}
+                                {player.pronouns && <span className={styles.pronouns}>({player.pronouns})</span>}
+                                </h3>
                                 <div className={styles.socials}>
                                     {player.twitch && (
                                         <a href={`https://www.twitch.tv/${player.twitch}`} target="_blank" rel="noreferrer">
@@ -40,15 +43,20 @@ export const TeamList = ({ team, name }: TeamListProps) => {
                                             <IoLogoYoutube/>
                                         </a>
                                     )}
-                                    {player.twitter && (
-                                        <a href={`https://www.twitter.com/${player.twitter}`} target="_blank" rel="noreferrer">
-                                            <IoLogoTwitter />
-                                        </a>
-                                    )}
                                     {player.instagram && (
                                         <a href={`https://www.instagram.com/${player.instagram}`} target="_blank" rel="noreferrer">
                                             <IoLogoInstagram />
                                         </a>
+                                    )}
+                                    {player.bluesky && (
+                                        <a href={`https://bsky.app/profile/${player.bluesky}`} target="_blank" rel="noreferrer">
+                                        <RiBlueskyFill />
+                                    </a>
+                                    )}
+                                    {player.website && (
+                                        <a href={player.website} target="_blank" rel="noreferrer">
+                                        <IoGlobeOutline />
+                                    </a>
                                     )}
                                 </div>
                             </div>
