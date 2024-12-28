@@ -42,6 +42,6 @@ export const FALL_GUYS: Game = {
     players: 20
 };
 
-export const GAMES_LIST = [CAKE_BASH, TRICKY_TOWERS, ULTIMATE_CHICKEN_HORSE, GANG_BEASTS, GOLF_WITH_YOUR_FRIENDS, FALL_GUYS];
+export const GAMES_LIST = [ULTIMATE_CHICKEN_HORSE, TRICKY_TOWERS, CAKE_BASH, GANG_BEASTS, GOLF_WITH_YOUR_FRIENDS, FALL_GUYS];
 
 export const GAMES = Object.assign({}, GAMES_LIST.map((game) => { return { [game.name]: game }; }));
