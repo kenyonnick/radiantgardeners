@@ -298,7 +298,7 @@ export const ORANGE_TEAM = ALL_PLAYERS.filter((p) => p.team === ORANGE);
 export const PURPLE_TEAM = ALL_PLAYERS.filter((p) => p.team === PURPLE);
 export const YELLOW_TEAM = ALL_PLAYERS.filter((p) => p.team === YELLOW);
 
-export const TEAMS: Teams = {
+export const TEAMS: Omit<Teams, 'No Team'> = {
     Green: {
         team: GREEN,
         players: GREEN_TEAM,
