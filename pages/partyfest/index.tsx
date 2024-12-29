@@ -47,8 +47,8 @@ export default function PartyFest () {
             </h2>
             <nav className={styles.links}>
               <a href="#schedule">Schedule</a>
-              <a href="#games">Games</a>
               <a href="#teams">Teams</a>
+              <a href="#games">Games</a>
               <a href="#merch">Merch</a>
               <a href="#prizes">Prizes</a>
             </nav>

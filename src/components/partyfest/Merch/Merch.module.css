@@ -32,3 +32,11 @@
     justify-content: center;
     flex-wrap: wrap;
 }
+
+@media (max-width: 900px) {
+    .teams {
+        max-width: 100vw;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
