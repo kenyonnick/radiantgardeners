@@ -132,28 +132,28 @@ export const UPHILLSUBSET: Player = {
 };
 
 // Xvnder
-export const XVNDER: Player = {
-    name: 'theXVNDER',
+export const MYSTERY_B: Player = {
+    name: '?????',
     team: ORANGE,
-    twitch: 'theXVNDER',
-    youtube: '@theXVNDER',
-    bluesky: 'thexvnder.bsky.social',
-    instagram: 'the.xvnder',
-    pronouns: 'He/Him',
-    img: imgRoot2025 + 'Xvnder512.png',
+    // twitch: 'theXVNDER',
+    // youtube: '@theXVNDER',
+    // bluesky: 'thexvnder.bsky.social',
+    // instagram: 'the.xvnder',
+    // pronouns: 'He/Him',
+    img: imgRoot2025 + 'mystery.png',
 };
 
 // Bambina
-export const BAMBINA: Player = {
-    name: 'BambinaFofina',
+export const MYSTERY_A: Player = {
+    name: '?????',
     team: ORANGE,
-    twitch: 'BambinaFofina',
-    youtube: '@BambinaFofina',
-    instagram: 'BambinaFofina',
-    twitter: '@BambinaFofina',
-    bluesky: 'bambinafofina.bsky.social',
-    pronouns: 'She/Her',
-    img: imgRoot2025+'Bambina.png',
+    // twitch: 'BambinaFofina',
+    // youtube: '@BambinaFofina',
+    // instagram: 'BambinaFofina',
+    // twitter: '@BambinaFofina',
+    // bluesky: 'bambinafofina.bsky.social',
+    // pronouns: 'She/Her',
+    img: imgRoot2025+'mystery.png',
 };
 
 // Croix
@@ -308,7 +308,7 @@ export const ALL_PLAYERS: Player[] = [
     WATERKH,
     FAUXRETRO,
     BRANDONGLOVICH,
-    XVNDER,
+    MYSTERY_B,
     NOTORCRANK,
     ROYALAQUA,
     PREFERREDWHALE,
@@ -316,7 +316,7 @@ export const ALL_PLAYERS: Player[] = [
     UPHILLSUBSET,
     KHGUIDES,
     CRAZYCOMICS,
-    BAMBINA,
+    MYSTERY_A,
     VETELINO,
 ];
 
@@ -338,7 +338,7 @@ export const CAKE_BASH_PLAYERS = [
     KHGUIDES,
     CRAZYCOMICS,
     PAOPUKOMI,
-    XVNDER,
+    MYSTERY_B,
 ];
 
 
@@ -346,7 +346,7 @@ export const GANG_BEASTS_PLAYERS = [
     VIOLIN,
     ROYALAQUA,
     LANZTHEMASTER,
-    BAMBINA
+    MYSTERY_A
 ];
 
 export const GOLF_WITH_YOUR_FRIENDS_PLAYERS = [
