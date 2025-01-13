@@ -131,29 +131,27 @@ export const UPHILLSUBSET: Player = {
     img: imgRoot2024+'Uphill.jpg',
 };
 
-// Xvnder
-export const MYSTERY_B: Player = {
-    name: '?????',
-    team: ORANGE,
-    // twitch: 'theXVNDER',
-    // youtube: '@theXVNDER',
-    // bluesky: 'thexvnder.bsky.social',
-    // instagram: 'the.xvnder',
-    // pronouns: 'He/Him',
-    img: imgRoot2025 + 'mystery.png',
-};
-
 // Bambina
 export const MYSTERY_A: Player = {
-    name: '?????',
+    name: 'folzyfantasy15',
     team: ORANGE,
-    // twitch: 'BambinaFofina',
-    // youtube: '@BambinaFofina',
-    // instagram: 'BambinaFofina',
-    // twitter: '@BambinaFofina',
-    // bluesky: 'bambinafofina.bsky.social',
-    // pronouns: 'She/Her',
-    img: imgRoot2025+'mystery.png',
+    twitch: 'folzyfantasy15',
+    youtube: '@folzyfantasy15',
+    bluesky: 'folzyfantasy15.bsky.social',
+    pronouns: 'He/Him',
+    img: 'https://static-cdn.jtvnw.net/jtv_user_pictures/1f8eb389-2314-4ad5-98aa-697715b28f32-profile_image-300x300.png',
+    
+};
+
+// Xvnder
+export const MYSTERY_B: Player = {
+    name: 'DataRich',
+    team: ORANGE,
+    twitch: 'DataRich',
+    youtube: '@DataRich',
+    bluesky: 'datarich.bsky.social',
+    pronouns: 'He/Him',
+    img: 'https://static-cdn.jtvnw.net/jtv_user_pictures/3b1e781c-0822-4c7b-b823-e82a3f231db4-profile_image-300x300.png',
 };
 
 // Croix
