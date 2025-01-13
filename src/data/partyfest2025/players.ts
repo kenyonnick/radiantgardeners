@@ -131,25 +131,27 @@ export const UPHILLSUBSET: Player = {
     img: imgRoot2024+'Uphill.jpg',
 };
 
-// Bambina
+// Folzy
 export const MYSTERY_A: Player = {
     name: 'folzyfantasy15',
     team: ORANGE,
     twitch: 'folzyfantasy15',
     youtube: '@folzyfantasy15',
     bluesky: 'folzyfantasy15.bsky.social',
+    instagram: 'folzybear15',
     pronouns: 'He/Him',
     img: 'https://static-cdn.jtvnw.net/jtv_user_pictures/1f8eb389-2314-4ad5-98aa-697715b28f32-profile_image-300x300.png',
     
 };
 
-// Xvnder
+// DataRich
 export const MYSTERY_B: Player = {
     name: 'DataRich',
     team: ORANGE,
     twitch: 'DataRich',
     youtube: '@DataRich',
     bluesky: 'datarich.bsky.social',
+    instagram: 'thedatarich',
     pronouns: 'He/Him',
     img: 'https://static-cdn.jtvnw.net/jtv_user_pictures/3b1e781c-0822-4c7b-b823-e82a3f231db4-profile_image-300x300.png',
 };
