@@ -178,7 +178,7 @@ export default function PartyFest () {
               <h3>How to Enter</h3>
               <div className={styles.prizeList}>
                 <p style={{ width: '360px' }}>
-                  Cheer for your team in the <a href="https://www.twitch.tv/radiantgardeners">RadiantGardeners' Twitch Chat</a> using the follower emote for the team you want to cheer for to score Cheer Points!
+                  Cheer for your team in the <a href="https://www.twitch.tv/radiantgardeners">{"RadiantGardeners' Twitch Chat"}</a> using the follower emote for the team you want to cheer for to score Cheer Points!
                 </p>
                 <p>A Cheer Point is scored for a team if your message contains at least one cheer emote for that team</p>
                 <p>Cheer Points are scored on a 2 second cooldown</p>
