@@ -99,17 +99,42 @@
   font-style: normal;
 }
 
+.prizeSection {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  max-width: 640px;
+  background-color: white;
+  padding: 2rem 4rem;
+  width: 480px;
+  line-height: 1.25rem;
+  border-radius: 1rem;
+}
+
+.prizeSection h2 {
+  font-size: 1.75rem;
+}
+
+.prizeSection a {
+  text-decoration: underline;
+}
+
+.prizeSection {
+  text-align: center;
+}
+
 .prizeList {
   display: flex;
   flex-direction: column;
   justify-items: center;
-  gap: 0.5rem;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-}
-
-.prizeList>p::before, .prizeList>p::after {
-  content: ' • ';
+  align-items: center;
+  gap: 0.75rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
 }
 
 .footer {
@@ -130,6 +155,25 @@
   gap: 1rem;
   text-decoration: underline;
   width: 30%;
+}
+
+.modlist {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.modlist h3 {
+  font-size: 1.65rem;
+}
+
+.modlist em {
+  font-size: smaller;
+}
+
+.modlist p {
+  text-transform: uppercase;
+  margin-bottom: 0.25rem;
 }
 
 @media (max-width: 1200px) {

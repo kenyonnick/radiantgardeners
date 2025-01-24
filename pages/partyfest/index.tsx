@@ -117,7 +117,7 @@ export default function PartyFest () {
             <GameCards gamesList={GAMES_LIST}/>
           </Section>
           
-          <Section id="merch" style={{ backgroundColor: "#bff", color: "black"}}>
+          <Section id="merch" style={{ backgroundColor: "#fbf", color: "black"}}>
             <h1 className={styles.sectionTitle}>Merch</h1>
             <p><i>Support your favorite team by sporting some merch!</i></p>
             <br />
@@ -125,20 +125,106 @@ export default function PartyFest () {
           </Section>
           <Section id="prizes" style={{ backgroundColor: "#bff", color: "black"}}>
             <h1 className={styles.sectionTitle}>Prizes</h1>
-            <h3>The winning team will win:</h3>
-            <div className={styles.prizeList}>
-              <p>
-                The Party Crown Title
-              </p>
-              <p>
-                $50 Steam Gift Card (for each member)
-              </p>
-              <p>
-                Team cheer emote available until the next Party Fest
-              </p>
+            <div className={styles.prizeSection}>
+              <h2>Party Fest Winner</h2>
+              <h3>Prizes:</h3>
+              <div className={styles.prizeList}>
+                <p>
+                  The Party Crown Title
+                </p>
+                <p>
+                  $50 Steam Gift Card <em>(per member)</em>
+                </p>
+                <p>
+                  Team cheer emote available until the next Party Fest
+                </p>
+              </div>
+              <br />
+              <h3>How to Win</h3>
+              <p>Be on the team that wins Party Fest!</p>
+              <p><em>Party Fest participants only</em></p>
             </div>
+            <div className={styles.prizeSection}>
+              <h2>Best Clip Award</h2>
+              <h3>Prize: $25 Steam Gift Card</h3>
+              <br />
+              <h3>How to Enter</h3>
+              <div className={styles.prizeList}>
+                <p>
+                  1. Make a free <a href="https://www.clipgarden.tv/">
+                    Clip Garden
+                  </a>{' '}
+                  account by signing up with Twitch
+                </p>
+                <p>
+                  2. Submit clips to the
+                  {' '}
+                  <a href="https://www.clipgarden.tv/channel/RadiantGardeners/collections/party-fest-2025">
+                    Party Fest 2025 Collection
+                  </a>
+                </p>
+                <p>
+                  3. Like clips in the collection and get people to like yours!
+                </p>
+              </div>
+              <br />
+              <h3>How to Win</h3>
+              <p>Have the most liked clip in the collection by the end of Party Fest!</p>
+            </div>
+            <div className={styles.prizeSection}>
+              <h2>Biggest Cheer Award</h2>
+              <h3>Prize: Party Fest 2025 T-Shirt</h3>
+              <br />
+              <h3>How to Enter</h3>
+              <div className={styles.prizeList}>
+                <p style={{ width: '360px' }}>
+                  Cheer for your team in the <a href="https://www.twitch.tv/radiantgardeners">RadiantGardeners' Twitch Chat</a> using the follower emote for the team you want to cheer for to score Cheer Points!
+                </p>
+                <p>A Cheer Point is scored for a team if your message contains at least one cheer emote for that team</p>
+                <p>Cheer Points are scored on a 2 second cooldown</p>
+              </div>
+              <p><b>Win Condition:</b> Score more cheer points for a single team than anyone else!</p>
+            </div>
+            <p style={{ width: '360px' }}>Scoring will conclude and winners will be decided after the final round of Fall Guys during the finale.</p>
+            <br />
             <p style={{ color: '#888'}}><em>Prizes subject to change</em></p>
           </Section>
+          <Section 
+            id="thanks"
+            style={{
+              backgroundColor: "#bff",
+              color: "black",
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "center",
+              justifyContent: "center",
+              gap: "1rem",
+            }}
+          >
+            <h1 className={styles.sectionTitle}>Special Thanks</h1>
+            <p style={{ width: '360px', textAlign: "center" }}>
+              We owe a huge amount of thanks to our mods. 
+              They supported and encouraged us in planning the event, 
+              and helped us with moderation and scoring throughout. 
+              They are a big part of why things could run as smoothly as they did.
+              <br />
+              <br />
+              If you see them online, thank them for such a great Party Fest 2025!
+            </p>
+            <div className={styles.modlist}>
+              <h3>The Mods</h3>
+              <em>Listed alphabetically</em>
+              <br />
+              <p>ast_rsk</p>
+              <p>jeice795</p>
+              <p>livelaughlane</p>
+              <p>royalaqua</p>
+              <p>saharahinfinity</p>
+              <p>theninjaroids</p>
+              <p>uphillsubset</p>
+            </div>
+          </Section>
+
           <Footer />
       </div>
     );
