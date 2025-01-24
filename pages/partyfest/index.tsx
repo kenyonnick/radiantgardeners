@@ -88,7 +88,7 @@ export default function PartyFest () {
                 players={GANG_BEASTS_PLAYERS}
               />
               <ScheduleDay 
-                date={new Date(2025, 0, 24, 18)} 
+                date={new Date(2025, 0, 24, 19)} 
                 game={GOLF_WITH_YOUR_FRIENDS}
                 durationHrs={2} 
                 players={GOLF_WITH_YOUR_FRIENDS_PLAYERS}
